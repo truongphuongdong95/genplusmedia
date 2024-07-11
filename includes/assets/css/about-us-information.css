@@ -1,0 +1,106 @@
+.about-us-info-container{
+    margin-top: 30px;
+}
+
+.about-us-info-container .about-us-info-wrapper {
+    display: flex;
+    gap: 33px;
+}
+
+.about-us-info-container .about-us-info-title{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #222;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 auto 30px;
+    overflow: hidden;
+}
+
+.about-us-info-container .about-us-info-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 80%;
+    height: 8px;
+    background: linear-gradient(267deg, #1D62C8 41.87%, #80D4FF 111.9%);
+}
+
+.about-us-info-wrapper .about-us-info-image {
+    flex: 1;
+    max-width: 683px;
+    width: 100%;
+    height: 493px;
+    margin-left: -150px;
+}
+
+.about-us-info-wrapper .about-us-info-content {
+    flex: 1;
+    width: 100%;
+}
+
+.about-us-info-wrapper .about-us-info-content .list-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+}
+
+.about-us-info-wrapper .about-us-info-content .list-info .list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #EAF2FF;
+    background: #FFF;
+    box-shadow: 0px 23px 14px -12px rgba(0, 16, 36, 0.10);
+    padding: 20px 15px;
+}
+
+.about-us-info-wrapper .about-us-info-content .list-info .list-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.about-us-info-wrapper .about-us-info-content .list-info .list-item .content .title {
+    color: #222;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.about-us-info-wrapper .about-us-info-content .list-info .list-item .content .description {
+    color: #142846;
+    font-size: 1.125rem;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1170px) {
+    .about-us-info-container{
+        padding: 0 20px;
+    }
+
+    .about-us-info-wrapper .about-us-info-image{
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 700px){
+    .about-us-info-wrapper{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-info-wrapper .about-us-info-image {
+        display: none;
+    }
+}

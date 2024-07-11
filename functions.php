@@ -103,8 +103,8 @@ function register_scripts()
     if ((!is_admin()) && is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
-    wp_enqueue_script('jquery-3rd', get_template_directory_uri() . '/assets/js/jquery-3.7.1.min.js', array(), $theme_version);
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(), $theme_version);
+    // wp_enqueue_script('jquery-3rd', get_template_directory_uri() . '/assets/js/jquery-3.7.1.min.js', array(), $theme_version, true);
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), $theme_version, true);
     wp_script_add_data('main-js', 'strategy', 'defer');
 }
 
@@ -117,7 +117,8 @@ function menus_registration()
         'primary' => __('Desktop Horizontal Menu', 'genplus-media'),
         'expanded' => __('Desktop Expanded Menu', 'genplus-media'),
         'mobile' => __('Mobile Menu', 'genplus-media'),
-        'footer' => __('Footer Menu', 'genplus-media'),
+        'footer-1' => __('Footer Menu 1', 'genplus-media'),
+        'footer-2' => __('Footer Menu 2', 'genplus-media'),
         'social' => __('Social Menu', 'genplus-media'),
     );
 
