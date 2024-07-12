@@ -51,18 +51,6 @@ class Elementor_About_Us_Information_Widget extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'direction',
-            [
-                'label' => esc_html__('Direction', 'textdomain'),
-                'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__('Left', 'textdomain'),
-                'label_off' => esc_html__('Right', 'textdomain'),
-                'return_value' => 'left',
-                'default' => '',
-            ]
-        );
-
-        $this->add_control(
             'title',
             [
                 'label' => esc_html__('Title', 'genplus-media'),
@@ -86,7 +74,7 @@ class Elementor_About_Us_Information_Widget extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => [
                     [
-                        'name' => 'list_image',
+                        'name' => 'list_icon',
                         'label' => esc_html__('Choose Icon', 'genplus-media'),
                         'type' => \Elementor\Controls_Manager::MEDIA,
                         'default' => [
@@ -131,18 +119,17 @@ class Elementor_About_Us_Information_Widget extends \Elementor\Widget_Base
         ?>
         <div class="about-us-info-container">
             <h2 class="about-us-info-title"><?php esc_html_e($settings['title']); ?></h2>
-            <div class="about-us-info-wrapper <?php echo $settings['direction']; ?>">
+            <div class="about-us-info-wrapper">
                 <div class="about-us-info-image">
                     <img src="<?php echo !empty($settings['info_box_image']['url']) ? $settings['info_box_image']['url'] : (get_template_directory_uri() . '/assets/images/placeholder-default.png'); ?>"
                         alt="placeholder" loading="lazy">
                 </div>
                 <div class="about-us-info-content">
-                    <ul class="list-info"
-                        style="--list-item-icon:url('<?php echo get_template_directory_uri() . '/assets/icon/list-item-icon.svg' ?>')">
+                    <ul class="list-info">
                         <?php if (is_array($settings['info_list']) && count($settings['info_list']) > 0): ?>
                             <?php foreach ($settings['info_list'] as $key => $value): ?>
                                 <li class="list-item">
-                                    <img src="<?php echo !empty($value['list_image']['url']) ? $value['list_image']['url'] : (get_template_directory_uri() . '/assets/images/placeholder-default.png'); ?>"
+                                    <img src="<?php echo !empty($value['list_icon']['url']) ? $value['list_icon']['url'] : (get_template_directory_uri() . '/assets/images/placeholder-default.png'); ?>"
                                         alt="placeholder" loading="lazy">
                                     <div class="content">
                                         <h3 class="title"><?php esc_html_e($value['list_title']); ?></h3>

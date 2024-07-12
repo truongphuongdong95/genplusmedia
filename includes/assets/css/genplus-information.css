@@ -1,0 +1,262 @@
+.genplus-info-1-container {
+    background: var(--bg-genplus-info-min) -38.39px -112px / 104.441% 110.256% no-repeat;
+    padding: 130px 0 68px;
+    background-position: center;
+    background-size: cover;
+}
+
+.genplus-info-1-container .circle-border {
+    position: absolute;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 0px 20px #DADADA;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.genplus-info-1-container .circle-border:first-child {
+    bottom: 8%;
+    right: 30%;
+}
+
+.genplus-info-1-container .circle-border:nth-child(2) {
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 0px 40px #DADADA;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left {
+    position: relative;
+    flex: 2;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    max-width: 412px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-color);
+    padding: 15px 25px;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .icon-title {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 20px 15px;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .genplus-info-1-heading,
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .genplus-info-1-sub-heading {
+    color: #FFF;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 25px;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px dashed var(--secondary-color);
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+    position: relative;
+    top: 30px;
+    max-width: 368px;
+    min-width: 0;
+    width: 100%;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img:nth-child(2) {
+    position: relative;
+    top: -150px;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-right {
+    flex: 1;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-right .genplus-info-1-sub-title {
+    color: var(--primary-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-right .description {
+    color: #142846;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1170px) {
+    .genplus-info-1-container {
+        padding: 87px 20px 68px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .genplus-info-1-container .genplus-info-1-wrapper {
+        flex-direction: column;
+    }
+
+    .genplus-info-1-container .circle-border {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .genplus-info-1-container {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .genplus-info-1-container {
+        margin-top: 0;
+    }
+
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+        max-width: 320px;
+        height: 100%;
+    }
+
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 30%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .genplus-info-1-heading,
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .genplus-info-1-sub-heading {
+        font-size: 1.563rem;
+    }
+
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 420px) {
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 380px) {
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 320px) {
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 300px) {
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 280px) {
+    .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-image img {
+        max-width: 180px;
+    }
+}
+
+.genplus-info-2-container{
+    background: #EAF2FF;
+}
+
+.genplus-info-2-wrapper {
+    max-width: 1170px;
+    height: 330px;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+}
+
+.genplus-info-2-wrapper .genplus-info-2-left {
+    flex: 1;
+}
+
+.genplus-info-2-wrapper .genplus-info-2-left .genplus-info-2-title {
+    color: #222;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.genplus-info-2-wrapper .genplus-info-2-left .description {
+    color: #142846;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.genplus-info-2-wrapper .genplus-info-2-right {
+    flex: 1;
+    position: relative;
+    top: 0;
+}
+
+.genplus-info-2-wrapper .genplus-info-2-right .wrapper-image {
+    max-width: 100%;
+    height: 100%;
+}
+
+.genplus-info-2-wrapper .genplus-info-2-right .wrapper-image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    background: lightgray -4px -25px / 101.074% 106.782% no-repeat;
+}

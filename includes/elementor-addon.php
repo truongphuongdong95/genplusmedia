@@ -8,12 +8,18 @@ function register_widget_elementor($widgets_manager)
 	require_once (__DIR__ . '/widgets-elementor/information-box.php');
 	require_once (__DIR__ . '/widgets-elementor/list-posts.php');
 	require_once (__DIR__ . '/widgets-elementor/about-us-information.php');
+	require_once (__DIR__ . '/widgets-elementor/teams.php');
+	require_once (__DIR__ . '/widgets-elementor/genplus-infomation-1.php');
+	require_once (__DIR__ . '/widgets-elementor/genplus-infomation-2.php');
 
 	$widgets_manager->register(new \Elementor_Banner_Widget());
 	$widgets_manager->register(new \Elementor_Service_Widget());
 	$widgets_manager->register(new \Elementor_Information_Box_Widget());
 	$widgets_manager->register(new \Elementor_List_Posts_Widget());
 	$widgets_manager->register(new \Elementor_About_Us_Information_Widget());
+	$widgets_manager->register(new \Elementor_Team_Widget());
+	$widgets_manager->register(new \Elementor_GenPlus_Information_1_Widget());
+	$widgets_manager->register(new \Elementor_GenPlus_Information_2_Widget());
 }
 add_action('elementor/widgets/register', 'register_widget_elementor');
 
@@ -39,6 +45,8 @@ function elementor_widgets_dependencies()
 	wp_register_style('widget-style-information-box', get_template_directory_uri() . '/includes/assets/css/information-box.css');
 	wp_register_style('widget-style-list-posts', get_template_directory_uri() . '/includes/assets/css/list-posts.css');
 	wp_register_style('widget-style-about-us-information', get_template_directory_uri() . '/includes/assets/css/about-us-information.css');
+	wp_register_style('widget-style-teams', get_template_directory_uri() . '/includes/assets/css/teams.css');
+	wp_register_style('widget-style-genplus-info', get_template_directory_uri() . '/includes/assets/css/genplus-information.css');
 }
 
 // add_action('wp_enqueue_scripts', 'elementor_widgets_dependencies');
