@@ -1,15 +1,10 @@
 <?php
 function theme_support()
 {
-
     // Add default posts and comments RSS feed links to head.
     add_theme_support('automatic-feed-links');
 
-    /*
-     * Enable support for Post Thumbnails on posts and pages.
-     *
-     * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-     */
+    // Enable support for Post Thumbnails on posts and pages.
     add_theme_support('post-thumbnails');
 
     // Set post thumbnail size.
@@ -75,18 +70,16 @@ add_action('after_setup_theme', 'theme_support');
 
 /**
  * REQUIRED FILES
- * Include required files.
  */
 require get_template_directory() . '/includes/helper.php';
 require get_template_directory() . '/includes/elementor-addon.php';
+
 /**
  * Register and Enqueue Styles.
  */
 function register_styles()
 {
-
     $theme_version = wp_get_theme()->get('Version');
-
     wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', array(), $theme_version);
 }
 
@@ -97,7 +90,6 @@ add_action('wp_enqueue_scripts', 'register_styles');
  */
 function register_scripts()
 {
-
     $theme_version = wp_get_theme()->get('Version');
 
     if ((!is_admin()) && is_singular() && comments_open() && get_option('thread_comments')) {
@@ -112,7 +104,6 @@ add_action('wp_enqueue_scripts', 'register_scripts');
 
 function menus_registration()
 {
-
     $locations = array(
         'primary' => __('Desktop Horizontal Menu', 'genplus-media'),
         'expanded' => __('Desktop Expanded Menu', 'genplus-media'),
@@ -140,7 +131,6 @@ if (!function_exists('wp_body_open')) {
  */
 function sidebar_registration()
 {
-
     // Arguments used in all register_sidebar() calls.
     $shared_args = array(
         'before_title' => '<h2 class="widget-title subheading heading-size-3">',

@@ -173,7 +173,6 @@
 }
 
 @media (max-width: 480px) {
-
     .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .genplus-info-1-heading,
     .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .genplus-info-1-sub-heading {
         font-size: 1.563rem;
@@ -214,7 +213,7 @@
     }
 }
 
-.genplus-info-2-container{
+.genplus-info-2-container {
     background: #EAF2FF;
 }
 
@@ -228,6 +227,7 @@
 
 .genplus-info-2-wrapper .genplus-info-2-left {
     flex: 1;
+    margin: 0 0 30px;
 }
 
 .genplus-info-2-wrapper .genplus-info-2-left .genplus-info-2-title {
@@ -241,6 +241,29 @@
     color: #142846;
     font-size: 1.125rem;
     font-weight: 400;
+    line-height: normal;
+    margin: 10px 0 20px;
+}
+
+.genplus-info-2-wrapper .genplus-info-2-left .btn-facebook {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 273px;
+    height: 60px;
+    padding: 0 15px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+.genplus-info-2-wrapper .genplus-info-2-left .btn-facebook .icon-fb{
+    width: 42px;
+    height: 42px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px 0;
 }
 
 .genplus-info-2-wrapper .genplus-info-2-right {
@@ -254,9 +277,51 @@
     height: 100%;
 }
 
-.genplus-info-2-wrapper .genplus-info-2-right .wrapper-image img{
+.genplus-info-2-wrapper .genplus-info-2-right .wrapper-image img {
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     background: lightgray -4px -25px / 101.074% 106.782% no-repeat;
+}
+
+@media (max-width: 1170px) {
+    .genplus-info-2-container{
+        padding: 25px 20px;
+    }
+
+    .genplus-info-2-wrapper{
+        height: auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px){
+    .genplus-info-2-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .genplus-info-2-wrapper .genplus-info-2-left .wrapper-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .genplus-info-2-wrapper .genplus-info-2-left .genplus-info-2-title{
+        font-size: 1.563rem;
+    }
+
+    .genplus-info-2-wrapper .genplus-info-2-left .btn-facebook{
+        max-width: 263px;
+        height: 49px;
+    }
+
+    .genplus-info-2-wrapper .genplus-info-2-left .btn-facebook .icon-fb{
+        width: 35px;
+        height: 35px;
+    }
+
+    .genplus-info-2-wrapper .genplus-info-2-right .wrapper-image img{
+        border-radius: 20px;
+    }
 }

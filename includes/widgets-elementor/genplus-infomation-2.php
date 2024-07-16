@@ -79,6 +79,30 @@ class Elementor_GenPlus_Information_2_Widget extends \Elementor\Widget_Base
             ]
         );
 
+        $this->add_control(
+            'button_text',
+            [
+                'label' => esc_html__('Text button', 'genplus-media'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => esc_html__('GenPlus trên Facebook', 'genplus-media'),
+            ]
+        );
+
+        $this->add_control(
+			'button_link',
+			[
+				'label' => esc_html__( 'Link Button', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'options' => [ 'url', 'is_external', 'nofollow' ],
+				'default' => [
+					'url' => '#',
+					'is_external' => true,
+					'nofollow' => true,
+				],
+				'label_block' => true,
+			]
+		);
+
         $this->end_controls_section();
 
         // Content Tab End
@@ -96,8 +120,10 @@ class Elementor_GenPlus_Information_2_Widget extends \Elementor\Widget_Base
                     <div class="wrapper-content">
                         <h2 class="genplus-info-2-title"><?php esc_html_e($settings['title']); ?></h2>
                         <p class="description"><?php esc_html_e($settings['description']); ?></p>
-                        <a href="" class="btn-facebook"><img src="<?php echo (get_template_directory_uri() . '/assets/icon/fb-white.svg'); ?>"
-                        alt="icon" loading="lazy"> <span>GenPlus trên Facebook</span></a>
+                        <a href="<?php esc_html_e($settings['button_link']['url']); ?>" class="btn-facebook">
+                            <img class="icon-fb" src="<?php echo (get_template_directory_uri() . '/assets/icon/fb-white.svg'); ?>"
+                        alt="icon" loading="lazy"> <span><?php esc_html_e($settings['button_text']); ?></span>
+                        </a>
                     </div>
                 </div>
                 <div class="genplus-info-2-right">

@@ -48,17 +48,29 @@
     width: 96px;
     min-height: 350px;
     height: 100%;
-    background: linear-gradient(347deg, #BED5F6 5.7%, rgba(255, 255, 255, 0.00) 62.78%);
+    
 }
 
 .list-posts-container .list-posts-wrapper .list-posts .slick-prev {
     left: 10px;
     z-index: 1;
+    background: linear-gradient(-270deg, #BED5F6 5.7%, rgba(255, 255, 255, 0.00) 62.78%);
 }
 
 .list-posts-container .list-posts-wrapper .list-posts .slick-next {
     right: 10px;
     z-index: 1;
+    background: linear-gradient(270deg, #BED5F6 5.7%, rgba(255, 255, 255, 0.00) 62.78%);
+}
+
+.list-posts-container .list-posts-wrapper .list-posts .slick-prev::before{
+    position: absolute;
+    left: 10%;
+}
+
+.list-posts-container .list-posts-wrapper .list-posts .slick-next::before{
+    position: absolute;
+    right: 10%;
 }
 
 .list-posts-container .list-posts-wrapper .list-posts .slick-prev:hover::before,
@@ -165,10 +177,3 @@
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
-
-/* @media (max-width: 320px) {
-    .list-posts-container .list-posts-wrapper .list-posts .post-item.slick-slide{
-        max-width: 260px !important;
-        width: 100% !important;
-    }
-} */

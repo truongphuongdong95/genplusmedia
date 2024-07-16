@@ -11,6 +11,7 @@ function register_widget_elementor($widgets_manager)
 	require_once (__DIR__ . '/widgets-elementor/teams.php');
 	require_once (__DIR__ . '/widgets-elementor/genplus-infomation-1.php');
 	require_once (__DIR__ . '/widgets-elementor/genplus-infomation-2.php');
+	require_once (__DIR__ . '/widgets-elementor/testimonial-carousel.php');
 
 	$widgets_manager->register(new \Elementor_Banner_Widget());
 	$widgets_manager->register(new \Elementor_Service_Widget());
@@ -20,11 +21,12 @@ function register_widget_elementor($widgets_manager)
 	$widgets_manager->register(new \Elementor_Team_Widget());
 	$widgets_manager->register(new \Elementor_GenPlus_Information_1_Widget());
 	$widgets_manager->register(new \Elementor_GenPlus_Information_2_Widget());
+	$widgets_manager->register(new \Testimonial_Carousel_Widget());
 }
 add_action('elementor/widgets/register', 'register_widget_elementor');
 
 /**
- * Register scripts and styles for Elementor test widgets.
+ * Register scripts and styles for Elementor widgets.
  */
 function elementor_widgets_dependencies()
 {
@@ -38,6 +40,7 @@ function elementor_widgets_dependencies()
 	/* Scripts */
 	wp_enqueue_script( 'jquery' );
 	wp_register_script( 'widget-list-posts-script',  get_template_directory_uri() . '/includes/assets/js/widget-list-posts-script.js', [ 'jquery' ], false, true);
+	wp_register_script( 'widget-script-testimonial-carousel',  get_template_directory_uri() . '/includes/assets/js/testimonial-carousel.js', [ 'jquery' ], false, true);
 
 	/* Styles */
 	wp_register_style('widget-style-banner', get_template_directory_uri() . '/includes/assets/css/banner.css');
@@ -47,6 +50,7 @@ function elementor_widgets_dependencies()
 	wp_register_style('widget-style-about-us-information', get_template_directory_uri() . '/includes/assets/css/about-us-information.css');
 	wp_register_style('widget-style-teams', get_template_directory_uri() . '/includes/assets/css/teams.css');
 	wp_register_style('widget-style-genplus-info', get_template_directory_uri() . '/includes/assets/css/genplus-information.css');
+	wp_register_style('widget-style-testimonial-carousel', get_template_directory_uri() . '/includes/assets/css/testimonial-carousel.css');
 }
 
 // add_action('wp_enqueue_scripts', 'elementor_widgets_dependencies');
