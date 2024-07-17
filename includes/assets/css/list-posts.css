@@ -142,7 +142,7 @@
         min-height: 0;
         background: transparent;
         top: 100%;
-        right: 43%;
+        right: 40%;
         transform: translateX(-50%);
     }
 
@@ -152,7 +152,7 @@
         min-height: 0;
         background: transparent;
         top: 100%;
-        left: 43%;
+        left: 40%;
         transform: translateX(-50%);
     }
 
@@ -165,6 +165,10 @@
     .list-posts-container .list-posts-wrapper .list-posts .post-item.slick-slide:not(:last-child) {
         margin: 10px 20px;
         height: 350px;
+    }
+
+    .list-posts-container .list-posts-wrapper .list-posts .slick-prev:hover, .list-posts-container .list-posts-wrapper .list-posts .slick-prev:focus, .list-posts-container .list-posts-wrapper .list-posts .slick-next:hover, .list-posts-container .list-posts-wrapper .list-posts .slick-next:focus{
+        background: none;
     }
 }
 

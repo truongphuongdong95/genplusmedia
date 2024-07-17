@@ -6,22 +6,26 @@ function register_widget_elementor($widgets_manager)
 	require_once (__DIR__ . '/widgets-elementor/banner.php');
 	require_once (__DIR__ . '/widgets-elementor/service.php');
 	require_once (__DIR__ . '/widgets-elementor/information-box.php');
+	require_once (__DIR__ . '/widgets-elementor/information-box-2.php');
 	require_once (__DIR__ . '/widgets-elementor/list-posts.php');
 	require_once (__DIR__ . '/widgets-elementor/about-us-information.php');
 	require_once (__DIR__ . '/widgets-elementor/teams.php');
 	require_once (__DIR__ . '/widgets-elementor/genplus-infomation-1.php');
 	require_once (__DIR__ . '/widgets-elementor/genplus-infomation-2.php');
 	require_once (__DIR__ . '/widgets-elementor/testimonial-carousel.php');
+	require_once (__DIR__ . '/widgets-elementor/list-posts-by-category.php');
 
 	$widgets_manager->register(new \Elementor_Banner_Widget());
 	$widgets_manager->register(new \Elementor_Service_Widget());
 	$widgets_manager->register(new \Elementor_Information_Box_Widget());
+	$widgets_manager->register(new \Elementor_Information_Box_2_Widget());
 	$widgets_manager->register(new \Elementor_List_Posts_Widget());
 	$widgets_manager->register(new \Elementor_About_Us_Information_Widget());
 	$widgets_manager->register(new \Elementor_Team_Widget());
 	$widgets_manager->register(new \Elementor_GenPlus_Information_1_Widget());
 	$widgets_manager->register(new \Elementor_GenPlus_Information_2_Widget());
 	$widgets_manager->register(new \Testimonial_Carousel_Widget());
+	$widgets_manager->register(new \List_Posts_By_Category_Widget());
 }
 add_action('elementor/widgets/register', 'register_widget_elementor');
 
