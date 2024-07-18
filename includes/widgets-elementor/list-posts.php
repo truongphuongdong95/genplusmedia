@@ -119,7 +119,7 @@ class Elementor_List_Posts_Widget extends \Elementor\Widget_Base
                             <div class="post-item">
                                 <div class="post-thumb">
                                     <img src="<?php echo !empty($thumbnail) ? $thumbnail : (get_template_directory_uri() . '/assets/images/placeholder-default.png'); ?>"
-                                        alt="" loading="lazy">
+                                        alt="thumbnail" loading="lazy">
                                 </div>
                                 <div class="post-content">
                                     <div class="post-meta">
@@ -128,8 +128,10 @@ class Elementor_List_Posts_Widget extends \Elementor\Widget_Base
                                         <span class="date"><?php esc_html_e(date('d/m/Y H:m', strtotime($post_date))); ?> By</span>
                                         <span class="author-name"><?php esc_html_e($author_name); ?></span>
                                     </div>
-                                    <h2 class="post-title"><?php esc_html_e($title); ?>
-                                    </h2>
+                                    <a href="<?php esc_attr_e(get_the_permalink($post_id)); ?>">
+                                        <h2 class="post-title"><?php esc_html_e($title); ?>
+                                        </h2>
+                                    </a>
                                 </div>
                             </div>
                         <?php endwhile; ?>

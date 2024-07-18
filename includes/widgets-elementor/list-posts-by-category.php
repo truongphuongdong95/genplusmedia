@@ -123,7 +123,7 @@ class List_Posts_By_Category_Widget extends \Elementor\Widget_Base
                         <div class="post-item">
                             <div class="post-thumb">
                                 <img src="<?php esc_attr_e(!empty($featured_img_url) ? $featured_img_url : (get_template_directory_uri() . '/assets/images/placeholder-default.png')); ?>"
-                                    class="featured-image" />
+                                    class="featured-image" alt="featured image" loading="lazy" />
                             </div>
                             <div class="post-content">
                                 <a href="<?php echo esc_url(get_the_permalink($post_id)); ?>">
@@ -159,8 +159,8 @@ class List_Posts_By_Category_Widget extends \Elementor\Widget_Base
                             'current' => max(1, get_query_var('paged')),
                             'total' => $wp_query->max_num_pages,
                             'prev_next' => true,
-                            'prev_text' => sprintf('&#129120;', __('Newer Posts', 'text-domain')),
-                            'next_text' => sprintf('&#129122;', __('Older Posts', 'text-domain')),
+                            'prev_text' => sprintf('&#129120;', __('Newer Posts', 'genplus-media')),
+                            'next_text' => sprintf('&#129122;', __('Older Posts', 'genplus-media')),
                             'mid_size' => 2,
                         )
                     );

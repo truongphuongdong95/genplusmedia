@@ -263,6 +263,8 @@
     border-radius: 10px;
     border: 1px solid var(--secondary-color);
     background: var(--secondary-color);
+    font-size: 1.125rem;
+    font-weight: 600;
 }
 
 .genplus-info-2-wrapper .genplus-info-2-left .btn-facebook .icon-fb {

@@ -295,8 +295,7 @@ class Testimonial_Carousel_Widget extends \Elementor\Widget_Base
                                         </div>
                                     <?php endif; ?>
                                     <div class="testimonial-icon">
-                                        <img src="<?php echo (get_template_directory_uri() . '/assets/images/testimonial.png'); ?>"
-                                            alt="testimonial icon">
+                                        <img src="<?php echo (get_template_directory_uri() . '/assets/images/testimonial.png'); ?>" alt="testimonial icon" loading="lazy">
                                     </div>
                                 </div>
                             </div>

@@ -171,8 +171,7 @@ class Elementor_Service_Widget extends \Elementor\Widget_Base
                 <div class="list-service">
                     <div class="service-item">
                         <div class="icon-wrapper">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/icon/marketing-online.svg'; ?>"
-                                class="icon" />
+                            <img src="<?php echo get_template_directory_uri() . '/assets/icon/marketing-online.svg'; ?>" class="icon" loading="lazy" />
                         </div>
                         <div class="service-info">
                             <h3 class="service-name"><?php esc_html_e($settings['title_1']); ?></h3>
@@ -181,7 +180,7 @@ class Elementor_Service_Widget extends \Elementor\Widget_Base
                     </div>
                     <div class="service-item">
                         <div class="icon-wrapper">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/icon/mmo.svg'; ?>" class="icon" />
+                            <img src="<?php echo get_template_directory_uri() . '/assets/icon/mmo.svg'; ?>" class="icon" loading="lazy" />
                         </div>
                         <div class="service-info">
                             <h3 class="service-name"><?php esc_html_e($settings['title_2']); ?></h3>
@@ -191,7 +190,7 @@ class Elementor_Service_Widget extends \Elementor\Widget_Base
                     <div class="service-item">
                         <div class="icon-wrapper">
                             <img src="<?php echo get_template_directory_uri() . '/assets/icon/media-socials.svg'; ?>"
-                                class="icon" />
+                                class="icon" loading="lazy" />
                         </div>
                         <div class="service-info">
                             <h3 class="service-name"><?php esc_html_e($settings['title_3']); ?></h3>

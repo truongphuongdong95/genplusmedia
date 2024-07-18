@@ -52,6 +52,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 25px;
+    list-style: none;
 }
 
 .about-us-info-wrapper .about-us-info-content .list-info .list-item {

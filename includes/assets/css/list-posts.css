@@ -100,6 +100,10 @@
     padding: 15px 20px;
 }
 
+.list-posts-container .list-posts-wrapper .list-posts .post-item .post-content a:hover > .post-title{
+    color: var(--secondary-color);
+}
+
 .list-posts-container .list-posts-wrapper .list-posts .post-item .post-content .post-meta {
     display: flex;
     align-items: center;

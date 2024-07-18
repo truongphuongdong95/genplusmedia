@@ -121,8 +121,7 @@ class Elementor_GenPlus_Information_2_Widget extends \Elementor\Widget_Base
                         <h2 class="genplus-info-2-title"><?php esc_html_e($settings['title']); ?></h2>
                         <p class="description"><?php esc_html_e($settings['description']); ?></p>
                         <a href="<?php esc_html_e($settings['button_link']['url']); ?>" class="btn-facebook">
-                            <img class="icon-fb" src="<?php echo (get_template_directory_uri() . '/assets/icon/fb-white.svg'); ?>"
-                        alt="icon" loading="lazy"> <span><?php esc_html_e($settings['button_text']); ?></span>
+                            <img class="icon-fb" src="<?php echo (get_template_directory_uri() . '/assets/icon/fb-white.svg'); ?>" alt="icon" loading="lazy"> <span><?php esc_html_e($settings['button_text']); ?></span>
                         </a>
                     </div>
                 </div>

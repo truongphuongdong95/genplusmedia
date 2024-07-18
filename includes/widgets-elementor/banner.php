@@ -122,7 +122,7 @@ class Elementor_Banner_Widget extends \Elementor\Widget_Base
         ?>
         <div class="banner-container">
             <img class="banner-overlay"
-                src="<?php echo get_template_directory_uri() . '/assets/images/banner-overlay-min.png'; ?>" alt="banner  overlay" loading="lazy">
+                src="<?php echo get_template_directory_uri() . '/assets/images/banner-overlay-min.png'; ?>" alt="banner overlay" loading="lazy">
             <div class="banner-wrapper">
                 <div class="banner-content">
                     <h2 class="banner-title"><?php esc_html_e($settings['title_secondary']); ?> <span

@@ -26,6 +26,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 15px;
+    list-style: none;
 }
 
 .teams-container .teams-wrapper .list-info .list-item {

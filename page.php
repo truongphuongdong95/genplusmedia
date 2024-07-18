@@ -3,10 +3,10 @@
     <?php if (!is_front_page()): ?>
         <div class="breadcrumb"
             style="--overlay-breadcrumb-left: url('<?php echo get_template_directory_uri() . '/assets/images/overlay-breadcrumb-left.png'; ?>'); --overlay-breadcrumb-right:url('<?php echo get_template_directory_uri() . '/assets/images/overlay-breadcrumb-right.png'; ?>');">
-            <span><?php the_title(); ?></span>
+            <span class="breadcrumb-title"><?php the_title(); ?></span>
         </div>
     <?php endif; ?>
-    <main id="main" class="site-main"
+    <main id="main" class="site-main <?php esc_attr_e(is_front_page() ? 'home-page' : ''); ?>"
         style="--overlay-page: url('<?php echo get_template_directory_uri() . '/assets/images/overlay-page-min.png'; ?>');">
         <?php the_content(); ?>
     </main><!-- #main -->

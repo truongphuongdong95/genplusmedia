@@ -43,8 +43,7 @@
 			?>
 			<button class="btn-apply-now">Ứng tuyển ngay</button>
 		</nav><!-- #site-navigation -->
-		<a class="nav-mobile-button"><img
-				src="<?php echo get_template_directory_uri() . '/assets/icon/icon-nav-mobile.svg'; ?>" /></a>
+		<a class="nav-mobile-button"><img src="<?php echo get_template_directory_uri() . '/assets/icon/icon-nav-mobile.svg'; ?>" loading="lazy" /></a>
 
 	<?php endif; ?>
 
