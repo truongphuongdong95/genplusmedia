@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class Testimonial_Carousel_Widget extends \Elementor\Widget_Base
+class Elementor_Testimonial_Carousel_Widget extends \Elementor\Widget_Base
 {
     public function get_name()
     {

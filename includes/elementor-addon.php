@@ -14,6 +14,7 @@ function register_widget_elementor($widgets_manager)
 	require_once (__DIR__ . '/widgets-elementor/genplus-infomation-2.php');
 	require_once (__DIR__ . '/widgets-elementor/testimonial-carousel.php');
 	require_once (__DIR__ . '/widgets-elementor/list-posts-by-category.php');
+	require_once (__DIR__ . '/widgets-elementor/contact.php');
 
 	$widgets_manager->register(new \Elementor_Banner_Widget());
 	$widgets_manager->register(new \Elementor_Service_Widget());
@@ -24,8 +25,9 @@ function register_widget_elementor($widgets_manager)
 	$widgets_manager->register(new \Elementor_Team_Widget());
 	$widgets_manager->register(new \Elementor_GenPlus_Information_1_Widget());
 	$widgets_manager->register(new \Elementor_GenPlus_Information_2_Widget());
-	$widgets_manager->register(new \Testimonial_Carousel_Widget());
-	$widgets_manager->register(new \List_Posts_By_Category_Widget());
+	$widgets_manager->register(new \Elementor_Testimonial_Carousel_Widget());
+	$widgets_manager->register(new \Elementor_List_Posts_By_Category_Widget());
+	$widgets_manager->register(new \Elementor_Contact_Widget());
 }
 add_action('elementor/widgets/register', 'register_widget_elementor');
 
@@ -55,6 +57,7 @@ function elementor_widgets_dependencies()
 	wp_register_style('widget-style-teams', get_template_directory_uri() . '/includes/assets/css/teams.css');
 	wp_register_style('widget-style-genplus-info', get_template_directory_uri() . '/includes/assets/css/genplus-information.css');
 	wp_register_style('widget-style-testimonial-carousel', get_template_directory_uri() . '/includes/assets/css/testimonial-carousel.css');
+	wp_register_style('widget-style-contact', get_template_directory_uri() . '/includes/assets/css/contact.css');
 }
 
 // add_action('wp_enqueue_scripts', 'elementor_widgets_dependencies');

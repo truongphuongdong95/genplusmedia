@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class List_Posts_By_Category_Widget extends \Elementor\Widget_Base
+class Elementor_List_Posts_By_Category_Widget extends \Elementor\Widget_Base
 {
     public function get_name()
     {

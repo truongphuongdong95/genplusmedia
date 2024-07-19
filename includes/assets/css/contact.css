@@ -1,0 +1,193 @@
+.contact-container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 30px auto 0;
+}
+
+.contact-container .contact-wrapper {
+    display: flex;
+    gap: 60px;
+}
+
+.contact-container .map-wrapper {
+    margin: 30px 0 0;
+}
+
+.contact-container .contact-wrapper .left,
+.contact-container .contact-wrapper .right {
+    flex: 1;
+}
+
+.contact-container .contact-wrapper .left .heading {
+    color: #222;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.contact-container .contact-wrapper .left .socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 20px 0 35px;
+}
+
+.contact-container .contact-wrapper .left .socials .social-item {
+    background: var(--secondary-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.contact-container .contact-wrapper .left .socials .social-item img {
+    width: 25px;
+    height: 25px;
+    object-fit: scale-down;
+    padding: 3px;
+}
+
+.contact-container .contact-wrapper .left .list-information .phone,
+.contact-container .contact-wrapper .left .list-information .email,
+.contact-container .contact-wrapper .left .list-information .location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-container .contact-wrapper .left .list-information .phone,
+.contact-container .contact-wrapper .left .list-information .email {
+    margin: 0 0 30px;
+}
+
+.contact-container .contact-wrapper .left .list-information .icon-wrapper {
+    max-width: 54px;
+    width: 100%;
+    height: 54px;
+    background: #EAF2FF;
+    border-radius: 50%;
+}
+
+.contact-container .contact-wrapper .left .list-information .icon-wrapper .social-icon {
+    width: 54px;
+    height: 54px;
+    object-fit: scale-down;
+}
+
+.contact-container .contact-wrapper .left .list-information .phone .info label,
+.contact-container .contact-wrapper .left .list-information .email .info label,
+.contact-container .contact-wrapper .left .list-information .location .info label {
+    color: #5A6576;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+
+.contact-container .contact-wrapper .left .list-information .phone .info p,
+.contact-container .contact-wrapper .left .list-information .email .info p,
+.contact-container .contact-wrapper .left .list-information .location .info p {
+    color: #222;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.contact-container .contact-wrapper .right {
+    background: #F7F7F7;
+    padding: 30px 30px 5px 30px;
+}
+
+.contact-container .contact-wrapper .right .heading {
+    color: #222;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 10px;
+}
+
+.contact-container .contact-wrapper .right .sub-heading {
+    color: #5A6576;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 25px;
+}
+
+.contact-container .contact-wrapper .right .wpcf7-form-control {
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    background: #FFF;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    color: #8E8E8E;
+    text-align: justify;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-container .contact-wrapper .right .wpcf7-form-control.wpcf7-textarea {
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    background: #FFF;
+    margin: 0 0 25px;
+    padding: 10px 15px 0;
+    color: #8E8E8E;
+    text-align: justify;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-container .contact-wrapper .right .wpcf7-form-control.wpcf7-submit {
+    display: block;
+    background: linear-gradient(286deg, #1D62C8 43.58%, #80D4FF 171.45%) !important;
+    box-shadow: 0px 7px 7.6px -4px rgba(0, 16, 36, 0.25);
+    margin: 0 0 0 auto;
+    color: #FFF !important;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-container .contact-wrapper .right .wpcf7-not-valid-tip {
+    margin: 0 0 10px 5px;
+}
+
+@media (max-width: 1170px) {
+    .contact-container .contact-wrapper,
+    .contact-container .map-wrapper{
+        margin: 20px 0 0;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-container .contact-wrapper{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-container .contact-wrapper{
+        padding: 0;
+    }
+
+    .contact-container .contact-wrapper .left{
+        padding: 0 20px;
+    }
+
+    .contact-container .contact-wrapper .left .socials{
+        margin: 15px 0 20px;
+    }
+
+    .contact-container .contact-wrapper .left .list-information .icon-wrapper .social-icon{
+        max-width: 50px;
+        height: 50px;
+    }
+
+    .contact-container .contact-wrapper .right {
+        padding: 30px 20px 5px 20px;
+    }
+}
