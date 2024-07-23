@@ -41,7 +41,7 @@
 				)
 			);
 			?>
-			<button class="btn-apply-now">Ứng tuyển ngay</button>
+			<button class="btn-apply-now"><?php esc_html_e('Ứng tuyển ngay', 'genplus-media'); ?></button>
 		</nav><!-- #site-navigation -->
 		<a class="nav-mobile-button"><img src="<?php echo get_template_directory_uri() . '/assets/icon/icon-nav-mobile.svg'; ?>" loading="lazy" /></a>
 
@@ -59,5 +59,5 @@
 		)
 	);
 	?>
-	<button class="btn-apply-now">Ứng tuyển ngay</button>
+	<button class="btn-apply-now"><?php esc_html_e('Ứng tuyển ngay', 'genplus-media'); ?></button>
 </nav><!-- #site-navigation-mobile -->

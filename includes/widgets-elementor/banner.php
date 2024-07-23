@@ -132,7 +132,7 @@ class Elementor_Banner_Widget extends \Elementor\Widget_Base
                         <?php esc_html_e($settings['description']); ?>
                     </p>
                     <a class="btn-more" href="<?php esc_html_e($settings['url_btn_more']['url']); ?>">
-                        Xem thêm
+                        <?php esc_html_e('Xem thêm', 'genplus-media'); ?>
                     </a>
                 </div>
                 <div class="banner-image">
