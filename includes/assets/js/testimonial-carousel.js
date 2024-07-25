@@ -26,7 +26,7 @@
   };
   $(window).on("elementor/frontend/init", function () {
     elementorFrontend.hooks.addAction(
-      "frontend/element_ready/global",
+      "frontend/element_ready/testimonial_carousel_widget.default",
       initSliderTestimonial
     );
   });

@@ -98,6 +98,7 @@
     .banner-container .banner-wrapper .banner-image::before,
     .banner-container .banner-wrapper .banner-image img {
         min-width: 100%;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 25%, #FFF 99.5%);
     }
 }
 

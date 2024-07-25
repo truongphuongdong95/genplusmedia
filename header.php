@@ -7,6 +7,8 @@
 	<?php wp_head(); ?>
 </head>
 
+<div id="preloader" class="preloader"><span class="loader"></span></div>
+
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">

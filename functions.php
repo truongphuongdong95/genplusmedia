@@ -345,3 +345,116 @@ function handle_save_candidate_ajax()
 
 add_action('wp_ajax_handle_save_candidate', 'handle_save_candidate_ajax');
 add_action('wp_ajax_nopriv_handle_save_candidate', 'handle_save_candidate_ajax');
+
+function register_column_heading_candidate($columns)
+{
+    $columns['cb'] = '<input type=\'checkbox\' />';
+    $columns['title'] = esc_html__('Tên ứng viên', 'genplus-media');
+    $columns['email_candidate'] = esc_html__('Email', 'genplus-media');
+    $columns['phone_number_candidate'] = esc_html__('Số điện thoại', 'genplus-media');
+    $columns['position_candidate'] = esc_html__('Vị trí tuyển dụng', 'genplus-media');
+    $columns['cv_candidate'] = esc_html__('CV', 'genplus-media');
+    $columns['date'] = esc_html__('Date', 'genplus-media');
+    $new_columns = array();
+    $custom_order = array(
+        'cb',
+        'title',
+        'email_candidate',
+        'phone_number_candidate',
+        'position_candidate',
+        'cv_candidate',
+        'date'
+    );
+
+    foreach ($custom_order as $key => $col_name) {
+        $new_columns[$col_name] = $columns[$col_name];
+    }
+    return $new_columns;
+}
+
+function set_order_by_candidate_in_admin($wp_query)
+{
+    global $pagenow;
+    if (is_admin() && $_GET['post_type'] === 'candidate' && $pagenow === 'edit.php' && !isset($_GET['orderby'])) {
+        $wp_query->set('orderby', 'date');
+        $wp_query->set('order', 'desc');
+    }
+}
+
+function display_column_value($column)
+{
+    global $post;
+    $candidate_email = get_post_meta($post->ID, 'candidate_email', true);
+    $candidate_phone_number = get_post_meta($post->ID, 'candidate_phone', true);
+    $candidate_position = wp_get_object_terms($post->ID, 'candidate_position');
+    $cv_candidate = get_post_meta($post->ID, 'candidate_attachments_file', true);
+    $attachment_name = basename(get_attached_file($cv_candidate));
+    $attachment_url = wp_get_attachment_url($cv_candidate);
+    switch ($column) {
+        case 'email_candidate':
+            esc_html_e($candidate_email);
+            break;
+        case 'phone_number_candidate':
+            esc_html_e($candidate_phone_number);
+            break;
+        case 'position_candidate':
+            esc_html_e($candidate_position[0]->name);
+            break;
+        case 'cv_candidate':
+            echo '<a href="' . esc_url($attachment_url) . '">' . $attachment_name . '</a>';
+            break;
+        default:
+            # code...
+            break;
+    }
+}
+
+$post_type = isset($_GET['post_type']) ? sanitize_text_field(wp_unslash($_GET['post_type'])) : '';
+if (($pagenow === 'edit.php') && ($post_type === 'candidate')) {
+    add_filter('manage_edit-candidate_columns', 'register_column_heading_candidate');
+    add_filter('pre_get_posts', 'set_order_by_candidate_in_admin');
+    add_action('manage_candidate_posts_custom_column', 'display_column_value');
+}
+
+function add_candidate_detail_meta_box() {
+    add_meta_box(
+        'candidate_details',
+        'Candidate Details',
+        'candidate_detail_meta_box_callback',
+        'candidate', // Custom post type
+        'normal',
+        'high'
+    );
+}
+add_action( 'add_meta_boxes', 'add_candidate_detail_meta_box' );
+
+function candidate_detail_meta_box_callback( $post ) {
+    $candidate_email = get_post_meta($post->ID, 'candidate_email', true);
+    $candidate_phone = get_post_meta($post->ID, 'candidate_phone', true);
+    $candidate_position = wp_get_object_terms($post->ID, 'candidate_position');
+    $cv_candidate = get_post_meta($post->ID, 'candidate_attachments_file', true);
+    $attachment_name = basename(get_attached_file($cv_candidate));
+    $attachment_url = wp_get_attachment_url($cv_candidate);
+    ?>
+    <table class="form-table">
+        <tbody>
+            <tr>
+                <th scope="row"><?php esc_html_e('Email: ', 'genplus-media'); ?></th>
+                <td><?php esc_html_e($candidate_email); ?></td>
+            </tr>
+            <tr>
+                <th scope="row"><?php esc_html_e('Phone: ', 'genplus-media'); ?></th>
+                <td><?php esc_html_e($candidate_phone); ?></td>
+            </tr>
+            <tr>
+                <th scope="row"><?php esc_html_e('Position: ', 'genplus-media'); ?></th>
+                <td><?php esc_html_e($candidate_position[0]->name); ?></td>
+            </tr>
+            <tr>
+                <th scope="row"><?php esc_html_e('CV: ', 'genplus-media'); ?></th>
+                <td><?php echo '<a href="' . esc_url($attachment_url) . '">' . $attachment_name . '</a>'; ?></td>
+            </tr>
+        </tbody>
+    </table>
+    <?php
+}

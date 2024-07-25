@@ -11,7 +11,7 @@
   var handleModalPopup = function () {
     var modal = $(".modal");
     var btn = $(
-      ".site-header .site-branding-container .site-branding .main-navigation .btn-apply-now, .article-container .btn-apply"
+      ".site-header .site-branding-container .site-branding .main-navigation .btn-apply-now, .site-header .main-navigation-mobile .btn-apply-now, .article-container .btn-apply"
     );
     var span = $(".close, .btn-close");
 
@@ -210,11 +210,11 @@
         },
       },
       messages: {
-        full_name: "this field is required",
-        email: "this field is required",
-        phone: "this field is required",
-        position: "this field is required",
-        attachment_id: "this field is required",
+        full_name: "Trường này là bắt buộc",
+        email: "Trường này là bắt buộc",
+        phone: "Trường này là bắt buộc",
+        position: "Trường này là bắt buộc",
+        attachment_id: "Trường này là bắt buộc",
       },
       submitHandler: function (form) {
         form.submit();
@@ -222,7 +222,25 @@
     });
   };
 
+  var handleBackToTop = function () { 
+    $(window).scroll(function () {
+      if ($(this).scrollTop()) {
+        $(".back-to-top").fadeIn(500);
+      } else {
+        $(".back-to-top").fadeOut(500);
+      }
+    });
+  
+    $(".back-to-top").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 300);
+    });
+  }
+
   $(document).ready(function () {
+    $(".preloader").fadeOut(100, function () {
+      $("body").fadeIn(100);
+    });
+    handleBackToTop();
     toggleMenuMobile();
     handleModalPopup();
   });

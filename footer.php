@@ -73,7 +73,7 @@ $candidates = get_terms(
 </footer>
 <div class="copyright">
     <?php
-    printf(__('Copyright © 2024 GenPlus Media', 'genplus-media'));
+    printf(__('Copyright © '.date("Y").' GenPlus Media', 'genplus-media'));
     ?>
 </div><!-- .site-copyright -->
 <div class="modal">
@@ -85,15 +85,15 @@ $candidates = get_terms(
                 id="apply-form" class="apply-form" enctype="multipart/form-data">
                 <div class="form-group">
                     <label><?php esc_html_e('Họ và Tên', 'genplus-media'); ?></label>
-                    <input type="text" name="full_name" class="form-control" />
+                    <input type="text" name="full_name" class="form-control" placeholder="Nhập tên của bạn" />
                 </div>
                 <div class="form-group">
                     <label><?php esc_html_e('Email', 'genplus-media'); ?></label>
-                    <input type="email" name="email" class="form-control" />
+                    <input type="email" name="email" class="form-control" placeholder="Nhập email của bạn" />
                 </div>
                 <div class="form-group">
                     <label><?php esc_html_e('Số điện thoại', 'genplus-media'); ?></label>
-                    <input type="number" name="phone" class="form-control" />
+                    <input type="number" name="phone" class="form-control" placeholder="Nhập số điện thoại của bạn" />
                 </div>
                 <div class="form-group">
                     <label><?php esc_html_e('Vị trí ứng tuyển', 'genplus-media'); ?></label>
@@ -110,9 +110,9 @@ $candidates = get_terms(
                 </div>
                 <div class="form-group">
                     <label><?php esc_html_e('Nội dung ứng tuyển', 'genplus-media'); ?></label>
-                    <textarea name="content" class="form-control"></textarea>
+                    <textarea name="content" class="form-control" placeholder="Nhập nội dung ứng tuyển"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group form-group-media">
                     <label><?php esc_html_e('Tải CV lên', 'genplus-media'); ?></label>
                     <div id="attachment_plupload_container" class="media-upload">
                         <div class="icon-upload-media">
@@ -122,16 +122,16 @@ $candidates = get_terms(
                                     alt="icon">
                             </button>
                         </div>
-                        <h5>
+                        <h3 class="description">
                             <?php esc_html_e('*upload file jpg, png, pdf', 'genplus-media'); ?>
-                        </h5>
+                        </h3>
                         <div id="attachment_errors"></div>
                         <input type="hidden" id="attachment_id" name="attachment_id" class="do-not-ignore" value="" />
                     </div>
                 </div>
                 <div class="action">
                     <button class="btn-close" type="button"><?php esc_html_e('hủy', 'genplus-media'); ?></button>
-                    <button class="btn-submit" type="submit"><?php esc_html_e('ứng tuyển', 'genplus-media'); ?></button>
+                    <button class="btn-submit" type="button"><?php esc_html_e('ứng tuyển', 'genplus-media'); ?></button>
                 </div>
                 <div class="message"></div>
             </form>
@@ -141,5 +141,6 @@ $candidates = get_terms(
 <script src="<?php echo get_template_directory_uri() . '/assets/js/jquery-3.7.1.min.js'; ?>"
     id="jquery-3rd-js"></script>
 <?php wp_footer(); ?>
+<a class="back-to-top">&#129129;</a>
 </body>
 </html>

@@ -81,10 +81,14 @@
 }
 
 .list-posts-container .list-posts-wrapper .list-posts .slick-prev:hover,
-.list-posts-container .list-posts-wrapper .list-posts .slick-prev:focus,
+.list-posts-container .list-posts-wrapper .list-posts .slick-prev:focus{
+    background: linear-gradient(-270deg, #BED5F6 5.7%, rgba(255, 255, 255, 0.00) 62.78%);
+}
+
 .list-posts-container .list-posts-wrapper .list-posts .slick-next:hover,
 .list-posts-container .list-posts-wrapper .list-posts .slick-next:focus {
-    background: linear-gradient(347deg, #BED5F6 5.7%, rgba(255, 255, 255, 0.00) 62.78%);
+    /* background: linear-gradient(347deg, #BED5F6 5.7%, rgba(255, 255, 255, 0.00) 62.78%); */
+    background: linear-gradient(270deg, #BED5F6 5.7%, rgba(255, 255, 255, 0.00) 62.78%);
 }
 
 .list-posts-container .list-posts-wrapper .list-posts .post-item .post-thumb {
