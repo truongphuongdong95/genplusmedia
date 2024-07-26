@@ -36,6 +36,7 @@
 .list-posts-container .list-posts-wrapper .list-posts .post-item {
     width: 100%;
     height: auto;
+    min-height: 350px;
     border: 1px solid #C5DCFF;
 }
 
@@ -129,7 +130,6 @@
     font-family: "Raleway", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    text-transform: lowercase;
     margin: 15px 0 0;
     overflow: hidden;
     text-overflow: ellipsis;

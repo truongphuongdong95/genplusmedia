@@ -141,6 +141,6 @@ $candidates = get_terms(
 <script src="<?php echo get_template_directory_uri() . '/assets/js/jquery-3.7.1.min.js'; ?>"
     id="jquery-3rd-js"></script>
 <?php wp_footer(); ?>
-<a class="back-to-top">&#129129;</a>
+<a class="back-to-top"></a>
 </body>
 </html>

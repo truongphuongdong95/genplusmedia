@@ -283,11 +283,12 @@
 
 .genplus-info-2-wrapper .genplus-info-2-right .wrapper-image {
     max-width: 100%;
-    height: 100%;
+    height: 384px;
 }
 
 .genplus-info-2-wrapper .genplus-info-2-right .wrapper-image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     background: lightgray -4px -25px / 101.074% 106.782% no-repeat;

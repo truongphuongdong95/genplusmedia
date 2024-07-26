@@ -16,19 +16,12 @@ $(document).ready(function () {
         {
           breakpoint: 480,
           settings: {
+            arrows:false,
+            slidesToShow: 2,
+            slidesToScroll: 2,
             vertical: true,
-            verticalSwiping: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-          },
-        },
-        {
-          breakpoint: 320,
-          settings: {
-            vertical: true,
-            verticalSwiping: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            verticalSwiping: false,
+            swipeToSlide: false,
           },
         },
       ],

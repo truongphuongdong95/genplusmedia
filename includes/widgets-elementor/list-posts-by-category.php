@@ -69,8 +69,8 @@ class Elementor_List_Posts_By_Category_Widget extends \Elementor\Widget_Base
                 'default' => '',
                 'options' => [
                     '' => esc_html__('None', 'genplus-media'),
-                    'hoat-dong-noi-bat' => esc_html__('Hoạt động nổi bật', 'genplus-media'),
-                    'tin-tuyen-dung' => esc_html__('Tin tuyển dụng', 'genplus-media'),
+                    'hoat-dong' => esc_html__('Hoạt động nổi bật', 'genplus-media'),
+                    'tuyen-dung' => esc_html__('Tin tuyển dụng', 'genplus-media'),
                 ],
             ]
         );
@@ -122,8 +122,10 @@ class Elementor_List_Posts_By_Category_Widget extends \Elementor\Widget_Base
                         ?>
                         <div class="post-item">
                             <div class="post-thumb">
-                                <img src="<?php esc_attr_e(!empty($featured_img_url) ? $featured_img_url : (get_template_directory_uri() . '/assets/images/placeholder-default.png')); ?>"
+                                <a href="<?php esc_attr_e(get_the_permalink($post_id)); ?>">
+                                    <img src="<?php esc_attr_e(!empty($featured_img_url) ? $featured_img_url : (get_template_directory_uri() . '/assets/images/placeholder-default.png')); ?>"
                                     class="featured-image" alt="featured image" loading="lazy" />
+                                </a>
                             </div>
                             <div class="post-content">
                                 <a href="<?php echo esc_url(get_the_permalink($post_id)); ?>">
@@ -138,7 +140,7 @@ class Elementor_List_Posts_By_Category_Widget extends \Elementor\Widget_Base
                                     <img src="<?php echo (get_template_directory_uri() . '/assets/icon/calendar-date-icon.svg'); ?>"
                                         alt="calendar icon">
                                     <span class="date"><?php esc_html_e(date('d/m/Y H:m', strtotime($post_date))); ?> By</span>
-                                    <span class="author-name"><?php esc_html_e($author_name); ?></span>
+                                    <a href="<?php echo get_author_posts_url($author_id); ?>" class="author-name"><?php esc_html_e($author_name); ?></a>
                                 </div>
                                 <a href="<?php echo esc_url(get_the_permalink($post_id)); ?>" class="read-more">
                                     <?php esc_html_e('Xem thêm', 'genplus-media'); ?>

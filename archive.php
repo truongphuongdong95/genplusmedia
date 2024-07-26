@@ -37,7 +37,7 @@
                             <div class="post-meta">
                                 <img src="<?php echo (get_template_directory_uri() . '/assets/icon/calendar-date-icon.svg'); ?>" alt="calendar icon" loading="lazy">
                                 <span class="date"><?php esc_html_e(date('d/m/Y H:m', strtotime($post_date))); ?> By</span>
-                                <span class="author-name"><?php esc_html_e($author_name); ?></span>
+                                <a href="<?php echo get_author_posts_url($author_id); ?>" class="author-name"><?php esc_html_e($author_name); ?></a>
                             </div>
                             <a href="<?php echo esc_url(get_the_permalink($post_id)); ?>" class="read-more">
                                 <?php esc_html_e('Xem thêm', 'genplus-media'); ?>

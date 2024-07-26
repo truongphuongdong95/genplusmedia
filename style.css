@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
 Theme Name: GenPlus Media
-Theme URI: genplusmedia.online
+Theme URI: genplusmedia.com
 Author: sondang
-Author URI: genplusmedia.online
+Author URI: genplusmedia.com
 Description: GenPlus Media theme.
 Version: 1.0
 Text Domain: genplus-media
@@ -295,6 +295,13 @@ hr.styled-separator::after {
 	right: calc(50% - 0.5rem);
 }
 
+.entry-content img, 
+.entry-content svg,
+.entry-content embed,
+.entry-content object{
+	margin: 0 auto;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
@@ -442,6 +449,7 @@ pre code {
 /* Media ------------------------------------- */
 
 figure {
+	width: 100%;
 	display: block;
 	margin: 0;
 }
@@ -868,21 +876,37 @@ section {
 	position: relative;
 }
 
-.site .back-to-top {
-	position: fixed;
+.site .back-to-top{
+    position: fixed;
     right: 15px;
-    bottom: 30px;
+    bottom: 20px;
 	z-index: 99999;
-	display: none;
-    width: 30px;
+    padding: 5px;
+    margin: 0 auto;
+    background: var(--secondary-color);
     height: 30px;
-    color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
+    width: 30px;
     border-radius: 50%;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    text-align: center;
+    transition: all 0.2s linear;
 	cursor: pointer;
+}
+
+.site .back-to-top:hover {
+  transform: translate3d(0, -5px, 0);
+}
+
+.site .back-to-top::after {
+	content: "";
+    position: absolute;
+    right: 10px;
+	bottom: 8px;
+    z-index: 99999;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
 }
 
 .site-header .site-branding-container {
@@ -1579,6 +1603,7 @@ section {
 	display: flex;
 	gap: 24px;
 	margin: 25px auto;
+	font-family: 'Raleway', sans-serif;
 }
 
 .article-container .socials-sidebar {
@@ -1620,6 +1645,7 @@ section {
 
 .article-container .post .entry-header .post-meta .author-name {
 	color: var(--secondary-color);
+	text-decoration: none;
 }
 
 .article-container .post .entry-header .entry-title {
@@ -1776,7 +1802,6 @@ section {
 	font-family: "Raleway", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
-	text-transform: lowercase;
 	margin: 15px 0 0;
 	overflow: hidden;
 	text-overflow: ellipsis;

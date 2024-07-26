@@ -66,16 +66,15 @@ $posts = new WP_Query($args);
                         <img src="<?php echo (get_template_directory_uri() . '/assets/icon/calendar-date-icon.svg'); ?>"
                             alt="calendar icon">
                         <span class="date"><?php esc_html_e(date('d/m/Y H:m', strtotime($post_date))); ?> By</span>
-                        <span class="author-name"><?php esc_html_e($author_name); ?></span>
+                        <a href="<?php echo get_author_posts_url($author_id); ?>" class="author-name"><?php esc_html_e($author_name); ?></a>
                     </div>
-                    <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
                 </header>
                 <div class="entry-content">
                     <?php
                     the_content();
                     ?>
                 </div>
-                <?php if (in_array('tin-tuyen-dung', $arr_cat_slug)): ?>
+                <?php if (in_array('tuyen-dung', $arr_cat_slug)): ?>
                     <a class="btn-apply"><?php esc_html_e('Ứng tuyển ngay', 'genplus-media'); ?></a>
                 <?php endif; ?>
             </article>
@@ -97,15 +96,17 @@ $posts = new WP_Query($args);
                         ?>
                         <div class="post-item">
                             <div class="post-thumb">
-                                <img src="<?php echo !empty($thumbnail) ? $thumbnail : (get_template_directory_uri() . '/assets/images/placeholder-default.png'); ?>"
+                                <a href="<?php esc_attr_e(get_the_permalink($post_id)); ?>">
+                                    <img src="<?php echo !empty($thumbnail) ? $thumbnail : (get_template_directory_uri() . '/assets/images/placeholder-default.png'); ?>"
                                     alt="thumbnail" loading="lazy">
+                                </a>
                             </div>
                             <div class="post-content">
                                 <div class="post-meta">
                                     <img src="<?php echo (get_template_directory_uri() . '/assets/icon/calendar-date-icon.svg'); ?>"
                                         alt="calendar icon">
                                     <span class="date"><?php esc_html_e(date('d/m/Y H:m', strtotime($post_date))); ?> By</span>
-                                    <span class="author-name"><?php esc_html_e($author_name); ?></span>
+                                    <a href="<?php echo get_author_posts_url($author_id); ?>" class="author-name"><?php esc_html_e($author_name); ?></a>
                                 </div>
                                 <a href="<?php esc_attr_e(get_the_permalink($post_id)); ?>">
                                     <h2 class="post-title"><?php esc_html_e($title); ?>
