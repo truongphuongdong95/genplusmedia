@@ -29,7 +29,7 @@
 
 .info-box-container .info-box-wrapper .info-box-content .info-box-sub-title {
     color: var(--primary-color);
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
 }
@@ -39,7 +39,7 @@
     z-index: 0;
     display: inline-block;
     color: #222;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 10px auto 20px;
@@ -68,7 +68,7 @@
 .info-box-container .info-box-wrapper .info-box-content .list-info li {
     position: relative;
     color: #142846;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
 }
@@ -134,7 +134,7 @@
 
 .info-box-2-container .info-box-2-wrapper .info-box-2-content,
 .info-box-2-container .info-box-2-wrapper .info-box-2-image {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     flex: 1;
 }
 

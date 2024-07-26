@@ -6,7 +6,7 @@
     position: relative;
     display: inline-block;
     color: #222;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 10px auto 30px;
@@ -127,7 +127,7 @@
 
 .list-posts-container .list-posts-wrapper .list-posts .post-item .post-content .post-title {
     color: #222;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     margin: 15px 0 0;

@@ -11,7 +11,7 @@ Tags: genplus, media
 */
 
 /*	0. CSS Reset */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
 	--primary-color: #F86800;
@@ -87,7 +87,7 @@ body {
 	background: #fff;
 	box-sizing: border-box;
 	color: #000;
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
 	letter-spacing: -0.015em;
 	text-align: left;
@@ -96,7 +96,7 @@ body {
 @supports (font-variation-settings: normal) {
 
 	body {
-		font-family: "Lato", sans-serif;
+		font-family: "Roboto", sans-serif;
 	}
 }
 
@@ -420,7 +420,6 @@ code,
 kbd,
 pre,
 samp {
-	font-family: monospace;
 	font-size: 0.9em;
 	padding: 0.4rem 0.6rem;
 }
@@ -555,7 +554,7 @@ button,
 .faux-button,
 .wp-block-button__link,
 .wp-block-file__button {
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 	line-height: 1;
 }
 
@@ -569,7 +568,7 @@ button,
 	.faux-button.more-link,
 	.wp-block-button__link,
 	.wp-block-file__button {
-		font-family: "Lato", sans-serif;
+		font-family: "Roboto", sans-serif;
 	}
 }
 
@@ -919,7 +918,7 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -956,6 +955,7 @@ section {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 60px;
+	transition: all 0.25s linear;
 }
 
 .site-header .site-branding-container .site-branding .main-navigation .menu-main-menu-container .main-menu .menu-item:hover a,
@@ -966,7 +966,7 @@ section {
 }
 
 .site-header .site-branding-container .site-branding .main-navigation .btn-apply-now {
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	background: linear-gradient(286deg, var(--secondary-color) 43.58%, #80D4FF 171.45%);
 	box-shadow: 0px 7px 7.6px -4px rgba(0, 16, 36, 0.25);
 	border-radius: 5px;
@@ -1096,7 +1096,7 @@ section {
 
 .site-footer .footer-wrapper .right .heading {
 	color: #222;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
 	margin: 0 0 20px;
@@ -1260,9 +1260,10 @@ section {
 	background: linear-gradient(277deg, #1D62C8 39.86%, #80D4FF 139.98%);
 	text-align: center;
 	color: #FFF;
-	font-family: "Raleway", sans-serif;
-	font-size: 3.125rem;
+	font-family: "Roboto", sans-serif;
+	font-size: 2rem;
 	font-weight: 700;
+	padding: 10px 0;
 }
 
 .breadcrumb::before {
@@ -1285,6 +1286,8 @@ section {
 	padding: 0 20px;
 	width: 100%;
 	height: auto;
+	font-size: 2rem;
+	font-weight: 700;
 	line-height: normal;
 }
 
@@ -1295,7 +1298,7 @@ section {
 	font-weight: 400;
 	line-height: normal;
 	text-transform: capitalize;
-	margin: 0 0 30px;
+	margin: 0 0 10px;
 }
 
 .breadcrumb .breadcrumbs-detail .post-title {
@@ -1414,7 +1417,7 @@ section {
 
 .posts-wrapper .list-posts .post-item .post-content .post-title {
 	color: #222;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.625rem;
 	font-weight: 700;
 }
@@ -1603,7 +1606,7 @@ section {
 	display: flex;
 	gap: 24px;
 	margin: 25px auto;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .article-container .socials-sidebar {
@@ -1650,7 +1653,7 @@ section {
 
 .article-container .post .entry-header .entry-title {
 	color: #222;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 700;
 	line-height: normal;
@@ -1685,7 +1688,7 @@ section {
 .article-container .post h5,
 .article-container .post h6 {
 	color: #142846;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	line-height: normal;
 	margin: 10px 0;
 }
@@ -1742,7 +1745,7 @@ section {
 
 .related-posts .title {
 	color: #222;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 700;
 	margin: 0 0 25px;
@@ -1799,7 +1802,7 @@ section {
 
 .related-posts .list-posts .post-item .post-content .post-title {
 	color: #222;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin: 15px 0 0;
@@ -1842,12 +1845,17 @@ section {
 
 @media (max-width: 480px) {
 	.site-main .breadcrumbs-detail {
-		display: block;
+		display: -webkit-box;
 		padding: 0 20px;
 		margin: 15px 0 20px;
 		font-size: 1rem;
 		font-weight: 400;
 		color: var(--secondary-color);
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
 	}
 
 	.site-main .breadcrumbs-detail .post-title {
@@ -1928,7 +1936,7 @@ section {
 
 .not-found-container .not-found-wrapper .heading {
 	color: #222;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 600;
 	line-height: normal;
@@ -2004,7 +2012,7 @@ section {
 
 .modal .modal-content .modal-wrapper .heading {
 	color: #222;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 700;
 	line-height: normal;
@@ -2019,7 +2027,7 @@ section {
 .modal .modal-content .modal-wrapper .apply-form .form-group .error:not(.form-control), .modal .modal-content .modal-wrapper .apply-form .message .error{
 	color: #cc0033;
     display: inline-block;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.75rem;
     line-height: 0.85rem;
     margin: 5px 0 0;
@@ -2108,7 +2116,7 @@ section {
 	border-radius: 5px;
 	background: #B4B4B4;
 	padding: 0;
-	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;

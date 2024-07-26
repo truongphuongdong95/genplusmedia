@@ -69,7 +69,7 @@
 .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-left .wrapper-title .genplus-info-1-sub-heading {
     color: #FFF;
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.875rem;
     font-weight: 600;
 }
@@ -114,7 +114,7 @@
 
 .genplus-info-1-container .genplus-info-1-wrapper .genplus-info-1-right .genplus-info-1-sub-title {
     color: var(--primary-color);
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     margin: 0 0 20px;
@@ -239,7 +239,7 @@
 
 .genplus-info-2-wrapper .genplus-info-2-left .genplus-info-2-title {
     color: #222;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.875rem;
     font-weight: 700;
 }

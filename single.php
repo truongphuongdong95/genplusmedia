@@ -25,7 +25,7 @@ $posts = new WP_Query($args);
 <div id="content" class="site-content">
     <div class="breadcrumb"
         style="--overlay-breadcrumb-left: url('<?php echo get_template_directory_uri() . '/assets/images/overlay-breadcrumb-left.png'; ?>'); --overlay-breadcrumb-right:url('<?php echo get_template_directory_uri() . '/assets/images/overlay-breadcrumb-right.png'; ?>');">
-        <span class="breadcrumb-title"><?php wp_title(''); ?></span>
+        <h1 class="breadcrumb-title"><?php wp_title(''); ?></h1>
         <?php get_breadcrumb(); ?>
     </div>
     <main id="main" class="site-main">
