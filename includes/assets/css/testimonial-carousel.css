@@ -13,14 +13,14 @@
 }
 
 .testimonial-carousel-container .overall-rating .total-rating {
-    color: #222;
+    color: var(--text-color);
     font-size: 3.75rem;
     font-weight: 700;
     text-transform: lowercase;
 }
 
 .testimonial-carousel-container .overall-rating .rating-information .number-reviews {
-    color: #222;
+    color: var(--text-color);
     font-size: 1.125rem;
     font-weight: 600;
     margin: 10px 0 0;
@@ -105,7 +105,7 @@
 }
 
 .testimonial-carousel-wrapper .testimonial-carousel-meta .testimonial-carousel-meta-inner .testimonial-carousel-details .testimonial-name {
-    color: #222;
+    color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.25rem;
     font-weight: 600;

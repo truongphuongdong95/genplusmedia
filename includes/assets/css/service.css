@@ -85,7 +85,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    color: #222;
+    color: var(--text-color);
     font-size: 2.5rem;
     font-weight: 700;
     display: inline-block;
@@ -157,7 +157,7 @@
 }
 
 .service-container .service-wrapper .list-service .service-item .service-info .service-name {
-    color: #222;
+    color: var(--text-color);
     font-size: 1.375rem;
     font-weight: 600;
     text-align: center;

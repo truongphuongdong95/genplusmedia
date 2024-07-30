@@ -5,7 +5,7 @@
 .list-posts-container .title {
     position: relative;
     display: inline-block;
-    color: #222;
+    color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
@@ -126,7 +126,7 @@
 }
 
 .list-posts-container .list-posts-wrapper .list-posts .post-item .post-content .post-title {
-    color: #222;
+    color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;

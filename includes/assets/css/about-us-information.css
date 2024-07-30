@@ -15,7 +15,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    color: #222;
+    color: var(--text-color);
     font-size: 2.5rem;
     font-weight: 700;
     display: inline-block;
@@ -71,7 +71,7 @@
 }
 
 .about-us-info-wrapper .about-us-info-content .list-info .list-item .content .title {
-    color: #222;
+    color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.375rem;
     font-weight: 700;

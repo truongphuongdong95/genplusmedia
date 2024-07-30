@@ -238,7 +238,7 @@
 }
 
 .genplus-info-2-wrapper .genplus-info-2-left .genplus-info-2-title {
-    color: #222;
+    color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.875rem;
     font-weight: 700;

@@ -19,7 +19,7 @@
 }
 
 .contact-container .contact-wrapper .left .heading {
-    color: #222;
+    color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.875rem;
     font-weight: 700;
@@ -87,7 +87,7 @@
 .contact-container .contact-wrapper .left .list-information .phone .info p,
 .contact-container .contact-wrapper .left .list-information .email .info p,
 .contact-container .contact-wrapper .left .list-information .location .info p {
-    color: #222;
+    color: var(--text-color);
     font-size: 1.125rem;
     font-weight: 400;
 }
@@ -98,7 +98,7 @@
 }
 
 .contact-container .contact-wrapper .right .heading {
-    color: #222;
+    color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.875rem;
     font-weight: 700;
