@@ -5,7 +5,7 @@
 .list-posts-container .title {
     position: relative;
     display: inline-block;
-    color: var(--text-color);
+    color: #222;
     font-family: "Roboto", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
@@ -40,7 +40,7 @@
     border: 1px solid #C5DCFF;
 }
 
-.list-posts-container .list-posts-wrapper .list-posts .post-item.slick-slide:not(:last-child) {
+.list-posts-container .list-posts-wrapper .list-posts .post-item.slick-slide{
     margin: 0 10px;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .list-posts-container .list-posts-wrapper .list-posts .post-item .post-content .post-title {
-    color: var(--text-color);
+    color: #222;
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
@@ -170,7 +170,7 @@
         font-size: 34px;
     }
 
-    .list-posts-container .list-posts-wrapper .list-posts .post-item.slick-slide:not(:last-child) {
+    .list-posts-container .list-posts-wrapper .list-posts .post-item.slick-slide {
         margin: 10px 20px;
         height: 350px;
     }

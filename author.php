@@ -24,7 +24,7 @@ $total_posts = count($my_posts);
                     <?php echo get_avatar($author_id, 100, '', $current_auth->user_login); ?>
                 </div>
                 <div class="author-info">
-                    <h2 class="author-name"><?php esc_html_e($current_auth->user_login, 'genplus-media'); ?></h2>
+                    <h2 class="author-name"><?php esc_html_e($current_auth->display_name, 'genplus-media'); ?></h2>
                     <p class="author-description"><?php esc_html_e(the_author_meta('description', $author_id)); ?>
                     </p>
                 </div>

@@ -345,6 +345,7 @@ ol ol ol {
 }
 
 li {
+	font-size: 1.125rem;
 	line-height: 1.5;
 	margin: 0;
 }
@@ -1660,7 +1661,7 @@ section {
 .article-container .post {
 	width: 100%;
 	border: 1px solid #C5DCFF;
-	padding: 25px 30px;
+	padding: 25px 30px 5px;
 }
 
 .article-container .post .entry-header .post-meta {
