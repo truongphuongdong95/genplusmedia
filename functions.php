@@ -416,7 +416,8 @@ if (($pagenow === 'edit.php') && ($post_type === 'candidate')) {
     add_action('manage_candidate_posts_custom_column', 'display_column_value');
 }
 
-function add_candidate_detail_meta_box() {
+function add_candidate_detail_meta_box()
+{
     add_meta_box(
         'candidate_details',
         'Candidate Details',
@@ -426,9 +427,10 @@ function add_candidate_detail_meta_box() {
         'high'
     );
 }
-add_action( 'add_meta_boxes', 'add_candidate_detail_meta_box' );
+add_action('add_meta_boxes', 'add_candidate_detail_meta_box');
 
-function candidate_detail_meta_box_callback( $post ) {
+function candidate_detail_meta_box_callback($post)
+{
     $candidate_email = get_post_meta($post->ID, 'candidate_email', true);
     $candidate_phone = get_post_meta($post->ID, 'candidate_phone', true);
     $candidate_position = wp_get_object_terms($post->ID, 'candidate_position');

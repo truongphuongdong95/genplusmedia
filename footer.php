@@ -27,11 +27,11 @@ $candidates = get_terms(
                         loading="lazy"><?php esc_html_e('(+84) 877 979 777', 'genplus-media'); ?></a>
                 <ul class="site-socials">
                     <li><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/fb.svg'; ?>"
-                            alt="social icon" loading="lazy"></li>
+                            alt="facebook icon" loading="lazy"></li>
                     <li><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/tiktok.svg'; ?>"
-                            alt="social icon" loading="lazy"></li>
+                            alt="tiktok icon" loading="lazy"></li>
                     <li><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/mail.svg'; ?>"
-                            alt="social icon" loading="lazy"></li>
+                            alt="mail icon" loading="lazy"></li>
                 </ul>
             </div>
         </div>
@@ -119,7 +119,7 @@ $candidates = get_terms(
                             <button type="button" id="choose_attachment_files">
                                 <img loading="lazy"
                                     src="<?php echo get_template_directory_uri() . "/assets/images/icon-upload.png" ?>"
-                                    alt="icon">
+                                    alt="icon upload">
                             </button>
                         </div>
                         <h3 class="description">

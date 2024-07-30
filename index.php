@@ -45,7 +45,7 @@
                             <a href="<?php echo esc_url(get_the_permalink($post_id)); ?>" class="read-more">
                                 <?php esc_html_e('Xem thêm', 'genplus-media'); ?>
                                 <img src="<?php echo (get_template_directory_uri() . '/assets/icon/arrow-right-circle.svg'); ?>"
-                                    alt="calendar icon">
+                                    alt="more icon">
                             </a>
                         </div>
                     </div>
@@ -63,8 +63,8 @@
                         'current' => max(1, get_query_var('paged')),
                         'total' => $wp_query->max_num_pages,
                         'prev_next' => true,
-                        'prev_text' => sprintf('&#129120;', __('Newer Posts', 'genplus-media')),
-                        'next_text' => sprintf('&#129122;', __('Older Posts', 'genplus-media')),
+                        'prev_text' => sprintf('', __('Newer Posts', 'genplus-media')),
+                        'next_text' => sprintf('', __('Older Posts', 'genplus-media')),
                         'mid_size' => 2,
                     )
                 );

@@ -36,27 +36,27 @@ $posts = new WP_Query($args);
                     <a href="https://www.facebook.com/sharer/sharer.php?u=<?php esc_attr_e(get_the_permalink($post_id)); ?>"
                         target="_blank">
                         <img src="<?php echo get_template_directory_uri() . '/assets/icon/fb-secondary.svg'; ?>"
-                            alt="social icon" class="social-icon" />
+                            alt="facebook icon" class="social-icon" />
                     </a>
                 </li>
                 <li>
                     <a href="<?php esc_attr_e(get_the_permalink($post_id)); ?>" target="_blank">
                         <img src="<?php echo get_template_directory_uri() . '/assets/icon/tt-secondary.svg'; ?>"
-                            alt="social icon" class="social-icon" />
+                            alt="tiktok icon" class="social-icon" />
                     </a>
                 </li>
                 <li>
                     <a href="http://pinterest.com/pin/create/button/?url=<?php esc_attr_e(get_the_permalink($post_id)); ?>"
                         target="_blank">
                         <img src="<?php echo get_template_directory_uri() . '/assets/icon/pinterest-secondary.svg'; ?>"
-                            alt="social icon" class="social-icon" />
+                            alt="pinterest icon" class="social-icon" />
                     </a>
                 </li>
                 <li>
                     <a href="http://twitter.com/share?url=<?php esc_attr_e(get_the_permalink($post_id)); ?>"
                         target="_blank">
                         <img src="<?php echo get_template_directory_uri() . '/assets/icon/tw-secondary.svg'; ?>"
-                            alt="social icon" class="social-icon" />
+                            alt="twitter icon" class="social-icon" />
                     </a>
                 </li>
             </ul>

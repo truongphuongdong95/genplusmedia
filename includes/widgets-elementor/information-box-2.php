@@ -203,12 +203,12 @@ class Elementor_Information_Box_2_Widget extends \Elementor\Widget_Base
                         <div class="socials">
                             <a href="<?php esc_attr_e($settings['button_facebook_link']['url']); ?>" class="btn-facebook">
                                 <img class="icon-fb" src="<?php echo (get_template_directory_uri() . '/assets/icon/fb-white.svg'); ?>"
-                                alt="icon" loading="lazy"> 
+                                alt="facebook icon" loading="lazy"> 
                                 <?php esc_html_e($settings['button_facebook_text']); ?>
                             </a>
                             <a href="<?php esc_attr_e($settings['button_tiktok_link']['url']); ?>" class="btn-tiktok">
                                 <img class="icon-tiktok" src="<?php echo (get_template_directory_uri() . '/assets/icon/tiktok-white.svg'); ?>"
-                                alt="icon" loading="lazy"> 
+                                alt="tiktok icon" loading="lazy"> 
                                 <?php esc_html_e($settings['button_tiktok_text']); ?>
                             </a>
                         </div>
