@@ -16,6 +16,7 @@ Tags: genplus, media
 :root {
 	--primary-color: #F86800;
 	--secondary-color: #1D62C8;
+	--text-color: #222;
 }
 
 html,
@@ -941,7 +942,7 @@ section {
 }
 
 .site-header .site-branding-container .site-branding .main-navigation .menu-main-menu-container .main-menu .menu-item a {
-	color: #222;
+	color: var(--text-color);
 	font-size: 1rem;
 	font-weight: 500;
 }
@@ -1032,7 +1033,7 @@ section {
 	}
 
 	.site-header .site-branding-container .main-navigation-mobile .menu-main-menu-container .main-menu .menu-item a {
-		color: #222;
+		color: var(--text-color);
 		font-size: 1.125rem;
 		font-weight: 500;
 	}
@@ -1095,7 +1096,7 @@ section {
 }
 
 .site-footer .footer-wrapper .right .heading {
-	color: #222;
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
@@ -1111,7 +1112,7 @@ section {
 }
 
 .site-footer .footer-wrapper .right .footer-menu .menu-item a {
-	color: #222;
+	color: var(--text-color);
 	font-size: 1.063rem;
 	font-weight: 400;
 }
@@ -1132,7 +1133,7 @@ section {
 }
 
 .site-footer .footer-wrapper .left .site-info p {
-	color: #222;
+	color: var(--text-color);
 	font-size: 1.063rem;
 	font-weight: 400;
 }
@@ -1177,7 +1178,7 @@ section {
 .site-footer .footer-wrapper .left .site-contact .site-socials li {
 	display: inline-block;
 	box-sizing: border-box;
-	border: 1px solid #222;
+	border: 1px solid var(--text-color);
 	border-radius: 50%;
 	padding: 9px 11.5px;
 }
@@ -1416,7 +1417,7 @@ section {
 }
 
 .posts-wrapper .list-posts .post-item .post-content .post-title {
-	color: #222;
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 1.625rem;
 	font-weight: 700;
@@ -1681,7 +1682,7 @@ section {
 }
 
 .article-container .post .entry-header .entry-title {
-	color: #222;
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 700;
@@ -1773,7 +1774,7 @@ section {
 }
 
 .related-posts .title {
-	color: #222;
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 700;
@@ -1830,7 +1831,7 @@ section {
 }
 
 .related-posts .list-posts .post-item .post-content .post-title {
-	color: #222;
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -1888,7 +1889,7 @@ section {
 	}
 
 	.site-main .breadcrumbs-detail .post-title {
-		color: #222;
+		color: var(--text-color);
 	}
 
 	.site-main .breadcrumbs-detail a {
@@ -1964,7 +1965,7 @@ section {
 }
 
 .not-found-container .not-found-wrapper .heading {
-	color: #222;
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 600;
@@ -2040,7 +2041,7 @@ section {
 }
 
 .modal .modal-content .modal-wrapper .heading {
-	color: #222;
+	color: var(--text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 1.875rem;
 	font-weight: 700;
@@ -2094,7 +2095,7 @@ section {
 }
 
 .modal .modal-content .modal-wrapper .apply-form .form-group label {
-	color: #222;
+	color: var(--text-color);
 	text-align: justify;
 	font-size: 1.25rem;
 	font-weight: 400;
@@ -2274,7 +2275,7 @@ section {
 }
 
 .author-wrapper .author-info .author-name {
-	color: #222;
+	color: var(--text-color);
 	font-size: 1.875rem;
 	font-weight: 700;
 	line-height: 2.188rem;
@@ -2288,7 +2289,7 @@ section {
 }
 
 .list-posts .total-posts {
-	color: #222;
+	color: var(--text-color);
 	font-size: 1.875rem;
 	font-weight: 700;
 	line-height: normal;
