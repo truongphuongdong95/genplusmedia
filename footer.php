@@ -17,7 +17,7 @@ $candidates = get_terms(
                 <img class="footer-logo"
                     src="<?php echo get_template_directory_uri() . '/assets/images/logo-new.svg'; ?>" alt="footer logo"
                     loading="lazy">
-                <p><b><?php esc_html_e('Địa chỉ:', 'genplus-media'); ?></b> <?php esc_html_e('120 & 258 Xô Viết Nghệ Tĩnh, Hải Châu, Đà Nẵng.', 'genplus-media'); ?></p>
+                <p><b><?php esc_html_e('Địa chỉ:', 'genplus-media'); ?></b> <?php esc_html_e('Tầng 5, Tòa nhà NOVAS, 120 Xô Viết Nghệ Tĩnh, Hải Châu, Đà Nẵng', 'genplus-media'); ?></p>
                 <p><b><?php esc_html_e('Email:', 'genplus-media'); ?></b> <?php esc_html_e('contact@genplusmedia.com', 'genplus-media'); ?></p>
                 <p><b><?php esc_html_e('Thời gian:', 'genplus-media'); ?></b> <?php esc_html_e('Thứ hai - Thứ sáu, Sáng 08:00 - 11:30, Chiều 13:30 - 17:00', 'genplus-media'); ?></p>
             </div>
@@ -26,12 +26,12 @@ $candidates = get_terms(
                         src="<?php echo get_template_directory_uri() . '/assets/icon/phone.svg'; ?>" alt="icon"
                         loading="lazy"><?php esc_html_e('(+84) 877 979 777', 'genplus-media'); ?></a>
                 <ul class="site-socials">
-                    <li><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/fb.svg'; ?>"
-                            alt="facebook icon" loading="lazy"></li>
-                    <li><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/tiktok.svg'; ?>"
-                            alt="tiktok icon" loading="lazy"></li>
-                    <li><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/mail.svg'; ?>"
-                            alt="mail icon" loading="lazy"></li>
+                    <li><a href="https://www.facebook.com/GenPlusMedia/" target="_blank"><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/fb.svg'; ?>"
+                    alt="facebook icon" loading="lazy"></a></li>
+                    <li><a href="https://www.tiktok.com/@genplusmedia.tiktok" target="_blank"><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/tiktok.svg'; ?>"
+                    alt="tiktok icon" loading="lazy"></a></li>
+                    <li><a href="mailto:contact@genplusmedia.com"><img class="icon" src="<?php echo get_template_directory_uri() . '/assets/icon/mail.svg'; ?>"
+                    alt="mail icon" loading="lazy"></a></li>
                 </ul>
             </div>
         </div>

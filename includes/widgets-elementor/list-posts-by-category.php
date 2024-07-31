@@ -66,9 +66,9 @@ class Elementor_List_Posts_By_Category_Widget extends \Elementor\Widget_Base
             [
                 'label' => esc_html__('Category', 'genplus-media'),
                 'type' => \Elementor\Controls_Manager::SELECT,
-                'default' => '',
+                'default' => 'blog',
                 'options' => [
-                    '' => esc_html__('None', 'genplus-media'),
+                    'blog' => esc_html__('Blog', 'genplus-media'),
                     'hoat-dong' => esc_html__('Hoạt động nổi bật', 'genplus-media'),
                     'tuyen-dung' => esc_html__('Tin tuyển dụng', 'genplus-media'),
                 ],

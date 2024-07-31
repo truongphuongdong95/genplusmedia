@@ -53,10 +53,10 @@ class Elementor_Information_Box_2_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'direction',
             [
-                'label' => esc_html__('Direction', 'textdomain'),
+                'label' => esc_html__('Direction', 'genplus-media'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__('Left', 'textdomain'),
-                'label_off' => esc_html__('Right', 'textdomain'),
+                'label_on' => esc_html__('Left', 'genplus-media'),
+                'label_off' => esc_html__('Right', 'genplus-media'),
                 'return_value' => 'left',
                 'default' => '',
             ]

@@ -6,9 +6,13 @@
             <h1 class="breadcrumb-title"><?php the_title(); ?></h1>
         </div>
     <?php endif; ?>
-    <main id="main" class="site-main <?php esc_attr_e(is_front_page() ? 'home-page' : ''); ?>"
+    <main id="main" class="site-main <?php esc_attr_e(is_front_page() ? 'home-page' : 'page'); ?>"
         style="--overlay-page: url('<?php echo get_template_directory_uri() . '/assets/images/overlay-page-min.png'; ?>');">
-        <?php the_content(); ?>
+        <div class="page-container">
+            <?php
+            the_content();
+            ?>
+        </div>
     </main><!-- #main -->
 </div>
 <?php get_footer(); ?>

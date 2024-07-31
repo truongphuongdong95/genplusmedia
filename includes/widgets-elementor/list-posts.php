@@ -53,10 +53,10 @@ class Elementor_List_Posts_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'slider',
             [
-                'label' => esc_html__('Enable Slider', 'textdomain'),
+                'label' => esc_html__('Enable Slider', 'genplus-media'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__('on', 'textdomain'),
-                'label_off' => esc_html__('off', 'textdomain'),
+                'label_on' => esc_html__('on', 'genplus-media'),
+                'label_off' => esc_html__('off', 'genplus-media'),
                 'return_value' => 'slick',
                 'default' => '',
             ]
@@ -74,7 +74,7 @@ class Elementor_List_Posts_Widget extends \Elementor\Widget_Base
         $this->add_control(
 			'number_posts',
 			[
-				'label' => esc_html__( 'Number posts', 'textdomain' ),
+				'label' => esc_html__( 'Number posts', 'genplus-media' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'min' => 0,
 				'max' => 100,
@@ -82,6 +82,20 @@ class Elementor_List_Posts_Widget extends \Elementor\Widget_Base
 				'default' => 10,
 			]
 		);
+
+        $this->add_control(
+            'category',
+            [
+                'label' => esc_html__('Category', 'genplus-media'),
+                'type' => \Elementor\Controls_Manager::SELECT,
+                'default' => '',
+                'options' => [
+                    'blog' => esc_html__('Blog', 'genplus-media'),
+                    'hoat-dong' => esc_html__('Hoạt động nổi bật', 'genplus-media'),
+                    'tuyen-dung' => esc_html__('Tin tuyển dụng', 'genplus-media'),
+                ],
+            ]
+        );
 
         $this->end_controls_section();
 
@@ -98,7 +112,8 @@ class Elementor_List_Posts_Widget extends \Elementor\Widget_Base
             'post_status' => 'publish',
             'order' => 'DESC',
             'post_limits' => $settings['number_posts'],
-            'posts_per_page' => $settings['number_posts'] // this will retrive all the post that is published 
+            'posts_per_page' => $settings['number_posts'], // this will retrive all the post that is published 
+            'category_name' => $settings['category'],
         );
         $result = new WP_Query($args);
         ?>

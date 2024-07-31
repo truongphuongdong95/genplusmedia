@@ -1731,23 +1731,23 @@ section {
 	margin: 10px 0;
 }
 
-.article-container .post h2 {
+.article-container .post h2, .page-container h2 {
 	font-size: 1.875rem;
 }
 
-.article-container .post h3 {
+.article-container .post h3, .page-container h3 {
 	font-size: 1.5rem;
 }
 
-.article-container .post h4 {
+.article-container .post h4, .page-container h4 {
 	font-size: 1.125rem;
 }
 
-.article-container .post h5 {
+.article-container .post h5, .page-container h5 {
 	font-size: 0.75rem;
 }
 
-.article-container .post h6 {
+.article-container .post h6, .page-container h6 {
 	font-size: 0.625rem;
 }
 
@@ -1916,23 +1916,23 @@ section {
 		display: none;
 	}
 
-	.article-container .post h2 {
+	.article-container .post h2, .page-container h2 {
 		font-size: 1.25rem;
 	}
 
-	.article-container .post h3 {
+	.article-container .post h3, .page-container h3 {
 		font-size: 1.125rem;
 	}
 
-	.article-container .post h4 {
+	.article-container .post h4, .page-container h4 {
 		font-size: 1rem;
 	}
 
-	.article-container .post h5 {
+	.article-container .post h5, .page-container h5 {
 		font-size: 0.875rem;
 	}
 
-	.article-container .post h6 {
+	.article-container .post h6, .page-container h6 {
 		font-size: 0.75rem;
 	}
 

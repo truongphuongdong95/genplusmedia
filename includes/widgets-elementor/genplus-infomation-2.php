@@ -91,7 +91,7 @@ class Elementor_GenPlus_Information_2_Widget extends \Elementor\Widget_Base
         $this->add_control(
 			'button_link',
 			[
-				'label' => esc_html__( 'Link Button', 'textdomain' ),
+				'label' => esc_html__( 'Link Button', 'genplus-media' ),
 				'type' => \Elementor\Controls_Manager::URL,
 				'options' => [ 'url', 'is_external', 'nofollow' ],
 				'default' => [
