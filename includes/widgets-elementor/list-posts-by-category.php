@@ -103,6 +103,7 @@ class Elementor_List_Posts_By_Category_Widget extends \Elementor\Widget_Base
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : ((get_query_var('page')) ? get_query_var('page') : 1);
                     $args = array(
                         'post_status' => 'publish',
+                        'post_limits' => $settings['number_posts'],
                         'posts_per_page' => $settings['number_posts'],
                         'order' => $settings['order'],
                         'orderby' => 'date',

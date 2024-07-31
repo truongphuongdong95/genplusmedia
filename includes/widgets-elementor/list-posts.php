@@ -97,6 +97,7 @@ class Elementor_List_Posts_Widget extends \Elementor\Widget_Base
             'orderby' => 'ID',
             'post_status' => 'publish',
             'order' => 'DESC',
+            'post_limits' => $settings['number_posts'],
             'posts_per_page' => $settings['number_posts'] // this will retrive all the post that is published 
         );
         $result = new WP_Query($args);
